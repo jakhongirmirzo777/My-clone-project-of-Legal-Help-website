@@ -1,0 +1,37 @@
+.footer {
+  &__box {
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 2rem;
+    & span {
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  &__icon {
+    font-size: 3rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}

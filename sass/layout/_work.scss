@@ -1,0 +1,52 @@
+.work {
+  &__text {
+    text-align: center;
+    padding: 0 13rem 8rem;
+  }
+
+  &__box {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    align-items: center;
+    border: 10px solid rgba(176, 142, 68, 0.1);
+    white-space: nowrap;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__line {
+      position: relative;
+      &::after {
+        content: "";
+        border: 1.7px dashed yellow;
+        position: absolute;
+        top: 10rem;
+        left: -26rem;
+        height: 0.1rem;
+        width: 70rem;
+        z-index: 5;
+        @media only screen and (max-width: 63em) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__img {
+    height: 18rem;
+    width: 18rem;
+    position: relative;
+    z-index: 30;
+  }
+}

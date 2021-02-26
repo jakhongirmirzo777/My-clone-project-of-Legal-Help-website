@@ -1,0 +1,51 @@
+.header__heading {
+  &__container {
+    margin: 10rem 0 0;
+  }
+
+  &__box {
+    display: inline-block;
+    padding: 7.6rem 0 7.6rem 5.8rem;
+    position: relative;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      color: white;
+      font-size: 1.6rem;
+      font-family: "Poppins", sans-serif;
+      text-decoration: none;
+      border-bottom: 1px solid$color-yellow-light;
+      padding: 0.8rem;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      transform: translateY(-0.2rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    }
+
+    &:active {
+      transform: translateY(-0.1rem);
+      box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+    }
+  }
+}
+
+.header__rectangle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  @include respond(phone) {
+    display: none;
+  }
+}

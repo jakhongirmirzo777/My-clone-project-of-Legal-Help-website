@@ -1,0 +1,82 @@
+.other {
+  &__content {
+    max-width: 700px;
+    width: 100%;
+    padding: 2rem;
+  }
+  &__wrapper {
+    padding: 2rem 0;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 3rem;
+
+    &__content {
+      padding: 2rem 4rem 2rem 2rem;
+      position: relative;
+      margin-right: 32rem;
+      background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.85),
+        rgba($color-white, 0.85)
+      );
+      border-radius: 5px;
+      z-index: 10;
+      @media only screen and (max-width: 48.125em) {
+        margin-right: 0;
+      }
+
+      &__right {
+        margin-right: 0;
+        margin-left: 32rem;
+        @media only screen and (max-width: 48.125em) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__photo {
+      padding: 7rem 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0.5rem;
+      right: 6rem;
+      border: 6px solid rgba(176, 142, 68, 0.1);
+      z-index: 5;
+
+      @media only screen and (max-width: 48.125em) {
+        display: none;
+      }
+
+      &__right {
+        left: 0;
+        margin-right: 35rem;
+        @media only screen and (max-width: 48.125em) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  &__btn {
+    color: white !important;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 66%;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $color-blue;
+    }
+  }
+}

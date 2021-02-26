@@ -1,0 +1,71 @@
+.about {
+  &__box {
+  }
+
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5rem;
+      left: 10rem;
+      height: 20rem;
+      width: 20rem;
+      border: 8px solid rgba($color-yellow-light, 0.7);
+      background-color: transparent;
+      display: inline-block;
+      z-index: 5;
+      @include respond(tab-port) {
+        left: 20rem;
+      }
+      @media only screen and (max-width: 48em) {
+        left: 10rem;
+      }
+      @media only screen and (max-width: 31em) {
+        left: 1rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3rem;
+      right: 13rem;
+      background-color: rgba($color-yellow-light, 0.7);
+      height: 20rem;
+      width: 20rem;
+      display: inline-block;
+      z-index: 5;
+      @include respond(tab-land) {
+        right: 3rem;
+      }
+
+      @media only screen and (max-width: 62em) {
+        right: 16rem;
+      }
+
+      @include respond(tab-port) {
+        right: 25rem;
+        bottom: -7rem;
+      }
+
+      @media only screen and (max-width: 53em) {
+        right: 9rem;
+      }
+
+      @media only screen and (max-width: 29em) {
+        right: 1rem;
+      }
+    }
+  }
+
+  &__img {
+    height: 30rem;
+    position: relative;
+    z-index: 10;
+  }
+}

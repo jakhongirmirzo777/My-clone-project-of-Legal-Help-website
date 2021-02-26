@@ -1,0 +1,34 @@
+.btn__black {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: white;
+    background-color: $color-black-light;
+    padding: 1rem 2rem;
+    font-size: 2.3rem;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+  }
+
+  &__blue {
+    &,
+    &:link,
+    &:visited {
+      background-color: $color-blue;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+.navigation {
+  background-color: transparent !important;
+  //padding: 3rem 14.7rem 0;
+
+  &__logo {
+    height: 6rem;
+    width: 6rem;
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin: 0 5rem 0 0;
+      padding: 0;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    &__link {
+      &,
+      &:link,
+      &:visited {
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 2.4rem;
+        white-space: nowrap;
+      }
+
+      &:active,
+      &:hover {
+      }
+    }
+  }
+
+  &__collapse {
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      color: white !important;
+      font-size: 1.6rem;
+      font-family: "Open Sans", sans-serif;
+      margin-right: 2.5rem !important;
+      padding: 0;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: $color-yellow-dark;
+      display: block;
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__search {
+    border-radius: 10px;
+    background-color: $color-yellow-light;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &::-webkit-input-placeholder {
+      font-family: "Open Sans", sans-serif;
+      color: white !important;
+      font-size: 1.6rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: none;
+    &__icon {
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__toggler {
+    border: none;
+    &:focus,
+    &:active,
+    &-icon:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    &-icon {
+      &-inner {
+        font-size: 25px;
+        color: white;
+      }
+    }
+  }
+}

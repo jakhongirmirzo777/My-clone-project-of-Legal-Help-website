@@ -1,0 +1,32 @@
+.questions {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__box {
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 0 15px 25px rgba($color-black, 0.3);
+    background-color: $color-black-light;
+    border-radius: 5px;
+    border: 1.5px solid $color-yellow-light;
+  }
+
+  &__date {
+    font-size: 2rem;
+  }
+
+  &__content {
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 5rem;
+  }
+}
+
+.question__wrapper {
+  padding: 2.5rem;
+}

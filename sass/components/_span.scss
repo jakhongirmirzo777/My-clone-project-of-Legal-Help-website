@@ -1,0 +1,9 @@
+.span {
+  display: flex;
+  &__element {
+    background-color: $color-yellow-light;
+    height: 11rem;
+    width: 0.4rem;
+    margin-right: 3rem;
+  }
+}
